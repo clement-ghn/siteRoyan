@@ -1,1 +1,99 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('assets/arriere-plan.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0
+}
+
+header {
+  background-color: #e30612;
+  border-radius: 5px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  
+}
+h1 {
+  color: #fff;
+  font-size: 24px;
+  margin: 0;
+  text-align: center;
+}
+
+
+p {
+  margin: 0 0 10px;
+  text-align: justify;
+}
+
+.logo{
+  margin-right: auto;
+}
+
+#logo {
+  width: 150px;
+  height: 150px;
+}
+
+#logo img {
+  width: 60%;
+  height: 100%;
+  object-fit: contain;
+  padding-left: 0%;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 30px;
+}
+
+.menu li a {
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu li a:hover {
+  color: #ffb000;
+}
+
+.menu li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: #ffb000;
+  transform: scaleX(0);
+  transition: transform 0.2s ease-in-out;
+}
+
+.menu li a:hover::after {
+  transform: scaleX(1);
+}
+
+.title-container {
+  text-align: center;
+  flex-grow: 0.5;
+  margin-bottom: 10px;
+}
+
+.title-container h1 {
+  margin: 0;
+}

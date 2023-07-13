@@ -1,0 +1,45 @@
+/*--Hors header --*/
+
+  .container {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create three equal-width columns */
+    grid-gap: 20px; /* Add spacing between the cards */
+  }
+  
+  .card {
+    background-color: #f1f1f1;
+    padding: 20px;
+    box-shadow: 0 0 20px black;
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    background-color: #E6d109;
+    text-align: center;
+  }
+
+  .club-image {
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    object-fit: contain;
+  }
+
+  .club-lieu {
+    text-align: center;
+  }
+
+  .club-body {
+    text-align: justify;
+  }
+
+  .club-photos-carousel img{
+    width: 350px;
+    height: 350px;
+    border-radius: 5px;
+  }
+
+  a{
+    text-decoration: none;
+  }

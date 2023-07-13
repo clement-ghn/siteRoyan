@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Club de Plage Royan</title>
+  <link rel="stylesheet" type="text/css" href="./formulaire-inscription.component.css">
+</head>
+<body>
+  <header>
+    <div id="logo">
+      <img src="../../assets/logo.png" alt="Logo">
+    </div>
+    <div class="title-container">
+        <h1>Clubs de Plage de Royan</h1>
+      </div>
+    <ul class="menu">
+      <li><a href="/clubs">Les Clubs</a></li>
+      <li><a href="/natation">Natation</a></li>
+      <li><a href="/formulaire-inscription">Formulaire d'inscription</a></li>
+      <li><a href="contacts">Contacts et plan</a></li>
+      <li><a href="/connexion">Connexion</a></li>
+    </ul>
+  </header>
+  <div class="formulaire-container">
+  <form (ngSubmit)="submitForm()">
+    <div>
+      <label for="name">Nom :</label>
+      <input type="text" id="name" [(ngModel)]="formData.name" name="name" required>
+    </div>
+
+    <div>
+      <label for="name">Prénom(s) :</label>
+      <input type="text" id="prenom" [(ngModel)]="formData.prenom" name="prenom" required>
+    </div>
+  
+    <div>
+      <label for="email">Email :</label>
+      <input type="email" id="email" [(ngModel)]="formData.email" name="email" required>
+    </div>
+
+    <div>
+      <label for="email">Adresse permanente :</label>
+      <input type="email" id="adresse" [(ngModel)]="formData.adresse" name="adresse" required>
+    </div>
+
+    <div>
+      <label for="email">Adresse sur place :</label>
+      <input type="email" id="adresseRoyan" [(ngModel)]="formData.adresseRoyan" name="adresseRoyan" required>
+    </div>
+
+    <div>
+      <label for="email">Téléphone :</label>
+      <input type="email" id="telephone" [(ngModel)]="formData.telephone" name="telephone" required>
+    </div>
+  
+    <div>
+      <label for="message">Message :</label>
+      <textarea id="message" [(ngModel)]="formData.message" name="message" required></textarea>
+    </div>
+
+    <div>
+      <p>L'enfant eest-il autorisé à sortir seul du club ?</p>
+      <label>
+        <input type="radio" [(ngModel)]="formData.acceptTerms" name="sortir" value="yes" required> Oui
+      </label>
+      <label>
+        <input type="radio" [(ngModel)]="formData.acceptTerms" name="sortir" value="no" required> Non
+      </label>
+    </div>
+
+    <div>
+      <p>Nous autorisez-vous à prendre toutes décisions en cas d’accident et de faire transporter votre enfant à l’hôpital ?</p>
+      <label>
+        <input type="radio" [(ngModel)]="formData.acceptTerms" name="hopital" value="yes" required> Oui
+      </label>
+      <label>
+        <input type="radio" [(ngModel)]="formData.acceptTerms" name="hopital" value="no" required> Non
+      </label>
+    </div>
+
+    <div>
+      <p>Acceptez vous que des photos de votre enfant soient utilisées pour illustrer notre site internet ? </p>
+      <label>
+        <input type="radio" [(ngModel)]="formData.acceptTerms" name="droitsimage" value="yes" required> Oui
+      </label>
+      <label>
+        <input type="radio" [(ngModel)]="formData.acceptTerms" name="droitsimage" value="no" required> Non
+      </label>
+    </div>
+
+    <div><p>Notre club a souscrit une assurance responsabilité civile qui couvre votre enfant uniquement en cas de défaillance de notre matériel.</p></div>
+  
+    <button type="submit">Envoyer</button>
+  </form>
+  <div *ngIf="showThankYouMessage"class="thank-you-message">Merci!</div>
+</div>
+</body>
+</html>
