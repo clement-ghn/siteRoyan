@@ -4,8 +4,6 @@
   <meta charset="UTF-8">
   <title>Club de Plage Royan</title>
   <link rel="stylesheet" type="text/css" href="./clubs.component.css">
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 
 </head>
 <body>
@@ -52,18 +50,26 @@
             <strong>Accueil et renseignements (pour ne pas déranger les animateurs) : </strong><br>
             Le matin: 9h30 à 10h00 et 12h00 à 12h30<br>
             L'après midi: de 15h30 à 16h00 et 18h00 à 18h30<br>
-            En dehors de ces heures: Voir rubrique contacts
+            En dehors de ces heures: Voir rubrique <a href="contacts">contacts</a>
           </p>
-          <div class="club-photos-carousel">
-            <img src="../../assets/club-albatros1.jpeg" alt="Photo 1">
-            <img src="../../assets/club-albatros2.jpeg" alt="Photo 2">
-            <img src="../../assets/club-albatros3.jpeg" alt="Photo 3">
-          </div>          
+
+            <div class="gallery">
+              <div class = "gallery-item">
+                  <img src="../../assets/club-albatros1.jpeg" alt="Photo 1">
+              </div>
+              <div class = "gallery-item">
+                  <img src="../../assets/club-albatros2.jpeg" alt="Photo 2">
+              </div>
+              <div class = "gallery-item">
+                  <img src="../../assets/club-albatros3.jpeg" alt="Photo 3">
+              </div>
+            </div>      
+
       </div>
     </div>
     <div class="card">
       <div class="club-sidebar">
-        <img class="club-image" src="../../assets/pingouin.png" alt="albatros">
+        <img class="club-image" src="../../assets/pingouin.png" alt="pingouin">
       </div>
 
       <div class="club-main">
@@ -87,13 +93,22 @@
             <strong>Accueil et renseignements (pour ne pas déranger les animateurs) : </strong><br>
             Le matin: 9h30 à 10h00 et 12h00 à 12h30<br>
             L'après midi: de 15h30 à 16h00 et 18h00 à 18h30<br>
-            En dehors de ces heures: Voir rubrique contacts
+            En dehors de ces heures: Voir rubrique <a href="contacts">contacts</a>
           </p>
-          <div class="club-photos-carousel">
-            <img src="../../assets/club-pingouins1.jpeg" alt="Photo 1">
-            <img src="../../assets/club-pingouins2.jpeg" alt="Photo 2">
-            <img src="../../assets/club-pingouins3.jpeg" alt="Photo 3">
-          </div>    
+          <div class="gallery">
+            <div class = "gallery-item-4">
+                <img src="../../assets/club-pingouins1.jpeg" alt="Photo 1">
+            </div>
+            <div class = "gallery-item-4">
+                <img src="../../assets/club-pingouins2.jpeg" alt="Photo 2">
+            </div>
+            <div class = "gallery-item-4">
+              <img src="../../assets/club-pingouins3.jpeg" alt="Photo 3">
+          </div>
+            <div class = "gallery-item-4">
+                <img src="../../assets/club-pingouins4.jpeg" alt="Photo 3">
+            </div>
+          </div> 
       </div>
       </div>
       <div class="card"><div class="club-sidebar">
@@ -121,13 +136,19 @@
             <strong>Accueil et renseignements (pour ne pas déranger les animateurs) : </strong><br>
             Le matin: 9h30 à 10h00 et 12h00 à 12h30<br>
             L'après midi: de 15h30 à 16h00 et 18h00 à 18h30<br>
-            En dehors de ces heures: Voir rubrique contacts
+            En dehors de ces heures: Voir rubrique <a href="contacts">contacts</a>
         </p>
-        <div class="club-photos-carousel">
-          <img src="../../assets/club-tritons1.jpeg" alt="Photo 1">
-          <img src="../../assets/club-tritons3.jpeg" alt="Photo 3">
-          <img src="../../assets/club-tritons2.jpeg" alt="Photo 2">
-        </div>    
+        <div class="gallery">
+          <div class = "gallery-item">
+              <img src="../../assets/club-tritons1.jpeg" alt="Photo 1">
+          </div>
+          <div class = "gallery-item">
+              <img src="../../assets/club-tritons2.jpeg" alt="Photo 2">
+          </div>
+          <div class = "gallery-item">
+              <img src="../../assets/club-tritons3.jpeg" alt="Photo 3">
+          </div>
+        </div> 
       </div>
     </div>
   </div>
@@ -138,16 +159,5 @@
       </a>
     </div>
   </footer>  
-  <script>
-    $(document).ready(function(){
-      $('.club-photos-carousel').slick({
-        dots: true,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 1,
-        slidesToScroll: 1
-      });
-    });
-    </script>
 </body>
 </html>

@@ -1,0 +1,45 @@
+.formulaire-container {
+    background-color: #E6d109;
+    min-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .formulaire-container label {
+    color: black;
+    font-weight: bold;
+  }
+  
+  .formulaire-container input[type="text"],
+  .formulaire-container input[type="email"],
+  .formulaire-container textarea {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    resize: none;
+  }
+  
+  .formulaire-container button[type="submit"] {
+    background-color: red;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .formulaire-container button[type="submit"]:hover {
+    background-color: #FF7152;
+  }
+  
+  .thank-you-message {
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  

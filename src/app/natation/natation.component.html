@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Club de Plage Royan</title>
-  <link rel="stylesheet" type="text/css" href="./formulaire-inscription.component.css">
+  <link rel="stylesheet" type="text/css" href="./natation.component.css">
 </head>
 <body>
   <header>
@@ -57,9 +57,13 @@
       <label for="message">Message :</label>
       <textarea id="message" [(ngModel)]="formData.message" name="message" required></textarea>
     </div>
-    
 
     <div>
+      <label for="horaires">Horaires des cours de natation :</label>
+      <input type="time" id="horaires" [(ngModel)]="formData.horaires" name="horaires" required>
+    </div>
+
+    <div style="padding-top: 50px;">
       <p>L'enfant est-il autorisé à sortir seul du club ?</p>
       <label>
         <input type="radio" [(ngModel)]="formData.sortir" name="sortir" value="yes" required> Oui

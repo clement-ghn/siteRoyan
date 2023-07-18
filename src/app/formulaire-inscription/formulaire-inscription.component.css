@@ -37,6 +37,8 @@
 }
 
 .thank-you-message {
-  color: black;
+  color: red;
+  font-size: 18px;
   font-weight: bold;
+  margin-top: 10px;
 }
