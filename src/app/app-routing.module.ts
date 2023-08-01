@@ -7,6 +7,7 @@ import { NatationComponent } from './natation/natation.component';
 import { FormulaireInscriptionComponent } from './formulaire-inscription/formulaire-inscription.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { ConnexionComponent } from './connexion/connexion.component';
+import { UtilisateurComponent } from './utilisateur/utilisateur.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/accueil', pathMatch: 'full' },
@@ -16,6 +17,7 @@ export const routes: Routes = [
   { path: 'formulaire-inscription', component: FormulaireInscriptionComponent },
   { path: 'contacts', component: ContactsComponent },
   { path: 'connexion', component: ConnexionComponent },
+  { path: 'utilisateur/:username', component: UtilisateurComponent }
 ];
 
 @NgModule({

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Club de Plage Royan</title>
+  <link rel="stylesheet" type="text/css" href="./connexion.component.css">
+</head>
+<body>
+  <header>
+    <div id="logo">
+      <img src="../../assets/logo.png" alt="Logo">
+    </div>
+    <div class="title-container">
+        <h1>Clubs de Plage de Royan</h1>
+      </div>
+    <ul class="menu">
+      <li><a href="/clubs">Les Clubs</a></li>
+      <li><a href="/natation">Natation</a></li>
+      <li><a href="/formulaire-inscription">Formulaire d'inscription</a></li>
+      <li><a href="contacts">Contacts et plan</a></li>
+      <li><a href="/connexion">Connexion</a></li>
+    </ul>
+  </header>
+  
+  <div class="container">
+    <div class="centered-content">
+      <h2 class="section-title">Page de connexion</h2>
+    </div>
+    <form (submit)="onSubmit()">
+        <label for="username">Nom d'utilisateur:</label>
+        <input type="text" id="username" name="username" [(ngModel)]="username">
+    
+        <label for="password">Mot de passe:</label>
+        <input type="password" id="password" name="password" [(ngModel)]="password">
+    
+        <button type="submit">Se connecter</button>
+        <p *ngIf="showErrorMessage" style="color: red;">Nom d'utilisateur ou mot de passe incorrect.</p>
+      </form>
+  </div>
+  <footer>
+    <div class="footer-content">
+      <a href="https://www.facebook.com/clubdeplageroyanstgeorges" target="_blank">
+        <i class="fab fa-facebook-square"></i> Suivez-nous sur Facebook
+      </a>
+    </div>
+  </footer>  
+</body>
+</html>

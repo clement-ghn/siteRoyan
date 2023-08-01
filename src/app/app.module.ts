@@ -11,6 +11,7 @@ import { NatationComponent } from './natation/natation.component';
 import { FormulaireInscriptionComponent } from './formulaire-inscription/formulaire-inscription.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { ConnexionComponent } from './connexion/connexion.component';
+import { UtilisateurComponent } from './utilisateur/utilisateur.component';
 
 const routes: Routes = [
   { path: 'accueil', component: AccueilComponent },
@@ -18,7 +19,7 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [
-    AppComponent, AccueilComponent, ClubsComponent, NatationComponent, FormulaireInscriptionComponent, ContactsComponent, ConnexionComponent
+    AppComponent, AccueilComponent, ClubsComponent, NatationComponent, FormulaireInscriptionComponent, ContactsComponent, ConnexionComponent, UtilisateurComponent
   ],
   imports: [
     FormsModule,
